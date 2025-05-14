@@ -18,6 +18,6 @@ server.use('/uploads',express.static('./uploads'))
 
 const PORT = 3000 || process.env.PORT
 
-server.listen(port, () => {
-  console.log(`Successfully running the port ${port}`);
+server.listen(PORT, () => {
+  console.log(`Successfully running the port ${PORT}`);
 });
