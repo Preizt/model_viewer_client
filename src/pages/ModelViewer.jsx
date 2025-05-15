@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 
 const UploadedModel = ({ model }) => {
-  const fileUrl = `http://localhost:3000/uploads/${model.modelfile}`;
+  const fileUrl = `https://model-viewer-server-6w2q.onrender.com/uploads/${model.modelfile}`;
   const { scene } = useGLTF(fileUrl);
 
   return <primitive object={scene} scale={0.1} />;
