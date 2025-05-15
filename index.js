@@ -14,7 +14,7 @@ server.use(cors());
 server.use(express.json());
 
 server.use(router)
-server.use('/uploads',express.static('/uploads'))
+server.use('/uploads',express.static('./uploads'))
 
 const PORT = 3000 || process.env.PORT
 
